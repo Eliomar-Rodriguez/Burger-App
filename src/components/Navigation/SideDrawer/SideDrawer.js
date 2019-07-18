@@ -5,7 +5,6 @@ import NavigationItems from '../NavigationItems/NavigationItems';
 import classes from './SideDrawer.css';
 import Backdrop from '../../UI/Backdrop/Backdrop';
 import Aux from '../../../hoc/Auxiliary';
-import { stringTypeAnnotation } from '@babel/types';
 
 const sideDrawer = props => {
     let attachedClasses = [classes.SideDrawer, classes.Close];
