@@ -3,7 +3,13 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import registerServiceWorker from './registerServiceWorker';
+//import axios from 'axios';
 import axios from 'axios';
+
+// general settings, if I'll need 
+axios.defaults.baseURL = 'https://jsonplaceholder.typicode.com';// this url is global for all request with axios
+//axios.defaults.headers.common['Authorization'] = 'AUTH TOKEN';
+axios.defaults.headers.post['Content-Type'] = 'application/json';
 
 //intercepta request
 var requestInterceptor = axios.interceptors.request.use(request=>{
