@@ -8,7 +8,7 @@ class Modal extends Component {
     // This could be a functional component, doesn't have to be a class
     
     shouldComponentUpdate(nextProps, nextstate){ // deberia renderizar el componente?
-        return nextProps.show !== this.props.show; // si la info es diferente, actualiza
+        return nextProps.show !== this.props.show || nextProps.children !== this.props.children; // si la info es diferente, actualiza
     }
 
     componentWillUpdate(){
